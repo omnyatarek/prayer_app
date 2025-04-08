@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playpen+Sans:wght@100..800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +15,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 section .container {
   width: 450px;
   background-color: #6c737a57;
@@ -25,12 +27,12 @@ section .container {
   text-align: right;
   direction: rtl;
 }
+
 section .top_sec {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
   margin-bottom: 40px;
-
   border-bottom: 1px solid rgba(255, 250, 250, 0.409);
 }
 
@@ -38,6 +40,7 @@ section .top_sec h3 {
   font-size: 26px;
   color: white;
 }
+
 section .top_sec select {
   width: 200px;
   border-radius: 5px;
@@ -47,13 +50,16 @@ section .top_sec select {
   margin-top: 10px;
   font-size: 20px;
 }
+
 section .top_sec date {
   width: 250px;
 }
+
 section .top_sec .date h4 {
   color: white;
   font-size: 22px;
 }
+
 section .prayer {
   display: flex;
   justify-content: space-between;
@@ -63,6 +69,33 @@ section .prayer {
   font-size: 20px;
   background-color: #171a1f36;
 }
+
 option:hover {
   background-color: aqua;
+}
+
+/* Responsive adjustments for very small screens (max-width 375px) */
+@media (max-width: 375px) {
+  .container {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  .top_sec h3 {
+    font-size: 1.2rem;
+  }
+
+  .top_sec select {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .top_sec .date h4 {
+    font-size: 1rem;
+  }
+
+  .prayer {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
 }
