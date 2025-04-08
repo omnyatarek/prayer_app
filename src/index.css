@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playpen+Sans:wght@100..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  font-style: normal;
+}
+
+section {
+  background-image: url(src/assets/is.jpg);
+  background-position: center;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+}
+section .container {
+  width: 450px;
+  background-color: #6c737a57;
+  padding: 25px 30px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 250, 250, 0.409);
+  margin-left: 15%;
+  text-align: right;
+  direction: rtl;
+}
+section .top_sec {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid rgba(255, 250, 250, 0.409);
+}
+
+section .top_sec h3 {
+  font-size: 26px;
+  color: white;
+}
+section .top_sec select {
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #171a1fa9;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+}
+section .top_sec date {
+  width: 250px;
+}
+section .top_sec .date h4 {
+  color: white;
+  font-size: 22px;
+}
+section .prayer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: #171a1f36;
+}
+option:hover {
+  background-color: aqua;
+}
